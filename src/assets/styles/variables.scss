@@ -1,0 +1,10 @@
+body {
+  border: 5px solid gold;
+}
+
+$primary-color: red;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}

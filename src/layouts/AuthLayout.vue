@@ -8,6 +8,6 @@
 
 <script setup>
 defineOptions({
-  name: 'AuthLayout',
-})
+  name: "AuthLayout",
+});
 </script>
