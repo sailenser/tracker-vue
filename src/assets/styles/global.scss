@@ -1,7 +1,24 @@
-body {
-  border: 5px solid gold;
+//body {
+//  outline: 5px solid gold;
+//}
+//
+//.page-content {
+//  color: $primary-color;
+//}
+
+.app-fade-enter-active {
+  animation: appFade 0.2s;
 }
 
-.page-content {
-  color: $primary-color;
+.app-fade-leave-active {
+  animation: appFade 0.2s reverse;
+}
+
+@keyframes appFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

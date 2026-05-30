@@ -1,13 +1,11 @@
 <template>
-  <main class="page-content">
-    <div class="page-content__wrapper">
-      <slot />
-    </div>
+  <main class="tracker-auth">
+    <slot />
   </main>
 </template>
 
-<script setup>
-defineOptions({
-  name: "AuthLayout",
-});
+<script setup lang="ts">
+  defineOptions({
+    name: 'AuthLayout',
+  });
 </script>
