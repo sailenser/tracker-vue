@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
 
 import Home from '@/views/Home.vue';
 import Habits from '@/views/Habits.vue';
 
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
@@ -18,20 +18,20 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    meta: { layout: 'auth' },
     component: () => import('@/views/auth/Login.vue'),
+    meta: { layout: 'auth' },
   },
   {
     path: '/registration',
     name: 'registration',
-    meta: { layout: 'auth' },
     component: () => import('@/views/auth/Registration.vue'),
+    meta: { layout: 'auth' },
   },
 ];
 
 const router = createRouter({
-  routes,
   history: createWebHistory(),
+  routes,
 });
 
 export default router;
