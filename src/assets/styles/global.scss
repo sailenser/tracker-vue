@@ -1,10 +1,27 @@
-//body {
-//  outline: 5px solid gold;
-//}
-//
-//.page-content {
-//  color: $primary-color;
-//}
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracker-auth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tracker-auth > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracker-page {
+  flex: 1;
+  display: block;
+  min-height: 100vh;
+}
 
 .app-fade-enter-active {
   animation: appFade 0.2s;

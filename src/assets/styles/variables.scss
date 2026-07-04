@@ -1,4 +1,41 @@
-$primary-color: red;
+//Em vars
+$fz: 16;
+$fz_base: 16;
+
+//Desktop
+$breakpoint_4k: 3840px;
+$breakpoint_2k: 2560px;
+$breakpoint_FullHD: 1920px;
+$breakpoint_HD_plus: 1680px;
+$breakpoint_laptop_l: 1600px;
+$breakpoint_laptop_m: 1440px;
+$breakpoint_laptop_s: 1366px;
+$breakpoint_HD: 1280px;
+$breakpoint_laptop_xs: 1200px;
+$breakpoint_old: 1024px;
+$breakpoint_800_l: 800px;
+
+//Mobile
+$breakpoint_iphone4_p: 320px;
+$breakpoint_iphone4_l: 480px;
+$breakpoint_iphone5_l: 568px;
+$breakpoint_GalaxyS5_p: 360px;
+$breakpoint_GalaxyS5_l: 640px;
+$breakpoint_Pixel2_p: 411px;
+$breakpoint_Pixel2_l: 731px;
+$breakpoint_iphone6_p: 420px;
+$breakpoint_iphone6_l: 740px;
+$breakpoint_iphone6plus_p: 414px;
+$breakpoint_iphone6plus_l: 736px;
+$breakpoint_iphoneX_p: 375px;
+$breakpoint_iphoneX_l: 812px;
+$breakpoint_Pixel2XL_l: 823px;
+$breakpoint_iPad_p: 768px;
+$breakpoint_iPad_l: 1024px;
+$breakpoint_iPadPro_p: 1024px;
+$breakpoint_iPadPro_l: 1366px;
+$breakpoint_800_l: 800px;
+$breakpoint_iPad_600_p: 600px;
 
 @mixin flex-center {
   display: flex;

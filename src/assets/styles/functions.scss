@@ -1,0 +1,38 @@
+@use 'sass:math';
+@use 'sass:list';
+@use 'sass:meta';
+
+@function strip-units($number) {
+  @return math.div($number, $number * 0 + 1);
+}
+
+@function em($values...) {
+  $context: strip-units(list.nth($values, list.length($values)));
+  $result: ();
+  $separator: list.separator($values);
+
+  @for $i from 1 through list.length($values) - 1 {
+    $value: list.nth($values, $i);
+
+    @if meta.type-of($value) == 'number' {
+      $value: strip-units($value);
+      $result: list.append(
+        $result,
+        math.div($value, $context) * 1em,
+        $separator: $separator
+      );
+    } @else if meta.type-of($value) == 'list' {
+      $new-value: list.append($value, $context);
+
+      $result: list.append($result, em($new-value...), $separator: $separator);
+    } @else {
+      $result: list.append($result, $value, $separator: $separator);
+    }
+  }
+
+  @if list.length($result) == 1 {
+    @return list.nth($result, 1);
+  }
+
+  @return $result;
+}

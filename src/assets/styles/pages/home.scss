@@ -1,0 +1,47 @@
+.tracker-page {
+  $self: &;
+
+  &--home {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background: url('@/assets/images/auth/home_bg.jpg') 0 0/100% 100% no-repeat;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-position: 0 0;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      background-image: url('@/assets/images/auth/home_gradient_bg.png');
+    }
+
+    &::after {
+      width: em(980, $fz);
+      height: em(626, $fz);
+      background-image: url('@/assets/images/auth/man_home.png');
+    }
+  }
+
+  &__wrapper {
+    width: em(916, $fz);
+  }
+
+  &__title {
+    $fz: 34;
+    color: #fff;
+    font-weight: 500;
+    line-break: 1.2;
+    font-family: Inter;
+    font-size: em($fz, $fz_base);
+  }
+}
