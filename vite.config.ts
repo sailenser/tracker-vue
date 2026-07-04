@@ -15,9 +15,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        // Переменные или миксины во все компоненты
         additionalData: `
             @use "@/assets/styles/variables.scss" as *;
+            @use "@/assets/styles/animations.scss" as *;
             @use "@/assets/styles/functions.scss" as *;
             @use "@/assets/styles/mixins.scss" as *;
             @use "@/assets/styles/fonts.scss" as *;
