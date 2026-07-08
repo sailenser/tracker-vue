@@ -1,0 +1,11 @@
+.auth-page {
+  $self: &;
+
+  &--register {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #efecea;
+    //background: url('@/assets/images/auth/home_bg.jpg') 0 0/100% 100% no-repeat;
+  }
+}

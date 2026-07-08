@@ -8,12 +8,12 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     name: 'home',
     component: Home,
-    meta: { layout: 'auth' },
   },
   {
     path: '/habits',
     name: 'habits',
     component: Habits,
+    meta: { layout: 'dashboard' },
   },
   {
     path: '/login',

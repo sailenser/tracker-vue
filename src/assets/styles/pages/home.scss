@@ -1,11 +1,11 @@
-.auth-page {
+.default-page {
   $self: &;
 
   &--home {
     display: flex;
     position: relative;
     justify-content: center;
-    background: url('@/assets/images/auth/home_bg.jpg') 0 0/100% 100% no-repeat;
+    background: url('@/assets/images/pages/home/home_bg.jpg') 0 0/100% 100% no-repeat;
 
     &::before,
     &::after {
@@ -22,13 +22,13 @@
     &::before {
       width: 100%;
       height: 100%;
-      background-image: url('@/assets/images/auth/home_gradient_bg.png');
+      background-image: url('@/assets/images/pages/home/home_gradient_bg.png');
     }
 
     &::after {
       width: em(980, $fz);
       height: em(626, $fz);
-      background-image: url('@/assets/images/auth/man_home.png');
+      background-image: url('@/assets/images/pages/home/man_home.png');
     }
   }
 
@@ -58,17 +58,17 @@
   }
 }
 
-.auth-page-nav,
-.auth-page-title {
+.default-page-nav,
+.default-page-title {
   display: flex;
   flex-direction: column;
 }
 
-.auth-page-nav {
+.default-page-nav {
   align-items: center;
 }
 
-.auth-page-nav {
+.default-page-nav {
   &__link {
     $fz: 16;
     font-size: em($fz, $fz_base);
@@ -86,7 +86,7 @@
     &--login {
       height: em(50, $fz);
       padding: em(10 15, $fz);
-      background-color: #3159F8;
+      background-color: #3159f8;
       min-width: em(350, $fz);
       margin-bottom: em(15, $fz);
 
