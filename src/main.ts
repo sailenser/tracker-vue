@@ -2,8 +2,11 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import { createPinia } from 'pinia';
+
 import '@/assets/styles/reset.scss';
 import '@/assets/styles/global.scss';
+import '@/assets/styles/animations.scss';
+import '@/assets/styles/fonts.scss';
 
 const pinia = createPinia();
 const app = createApp(App);

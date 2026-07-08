@@ -1,15 +1,15 @@
 <template>
-  <component :is="layoutComponent">
-    <RouterView v-slot="{ Component, route }">
-      <Transition name="app-fade" mode="out-in">
+  <Transition name="app-fade" mode="out-in">
+    <component :is="layoutComponent">
+      <RouterView v-slot="{ Component, route }">
         <div v-if="Component" :key="route.matched[0]?.name">
           <Suspense>
             <component :is="Component" />
           </Suspense>
         </div>
-      </Transition>
-    </RouterView>
-  </component>
+      </RouterView>
+    </component>
+  </Transition>
 </template>
 
 <script setup lang="ts">
