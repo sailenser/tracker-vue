@@ -5,7 +5,7 @@
     display: flex;
     position: relative;
     justify-content: center;
-    background: url('@/assets/images/pages/home/home_bg.jpg') 0 0/100% 100% no-repeat;
+    background: url('@/assets/images/pages/home/blue_bg.jpg') 0 0/100% 100% no-repeat;
 
     &::before,
     &::after {
@@ -22,13 +22,13 @@
     &::before {
       width: 100%;
       height: 100%;
-      background-image: url('@/assets/images/pages/home/home_gradient_bg.png');
+      background-image: url('@/assets/images/pages/home/blue_gradient_bg.png');
     }
 
     &::after {
       width: em(980, $fz);
       height: em(626, $fz);
-      background-image: url('@/assets/images/pages/home/man_home.png');
+      background-image: url('@/assets/images/pages/home/human.png');
     }
   }
 
