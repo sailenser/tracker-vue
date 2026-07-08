@@ -6,6 +6,6 @@
 
 <script setup lang="ts">
   defineOptions({
-    name: 'AuthLayout',
+    name: 'DefaultLayout',
   });
 </script>

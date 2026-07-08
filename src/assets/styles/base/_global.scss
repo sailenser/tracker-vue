@@ -4,14 +4,6 @@
   flex-direction: column;
 }
 
-.auth-page,
-.default-page,
-.tracker-page {
-  flex: 1;
-  display: block;
-  min-height: 100vh;
-}
-
 .app-fade-enter-active {
   animation: appFade 0.2s;
 }
