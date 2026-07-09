@@ -1,8 +1,10 @@
 <template>
   <main class="tracker-auth">
-    <slot />
+    <div class="tracker-auth__content">
+      <RouterView />
+    </div>
     <div class="tracker-auth__promo">
-      <component v-if="promoComponent" :is="promoComponent" />
+      Содержимое промо
     </div>
   </main>
 </template>
@@ -18,3 +20,5 @@
     promoComponent?: Component;
   }>();
 </script>
+
+<style scoped lang="scss" src="@/assets/styles/layouts/auth.scss"></style>

@@ -33,8 +33,9 @@
   }
 
   &__wrapper {
-    margin-top: em(210, $fz);
+    align-self: center;
     position: relative;
+    transform: translateY(em(-193, $fz));
   }
 
   &__title {

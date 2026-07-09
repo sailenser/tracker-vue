@@ -1,6 +1,6 @@
 <template>
   <Transition name="app-fade" mode="out-in">
-    <component :is="layoutComponent" :promo-component="promoComponent">
+    <component :is="layoutComponent">
       <RouterView v-slot="{ Component, route }">
         <div v-if="Component" :key="route.matched[0]?.name">
           <Suspense>
@@ -33,20 +33,5 @@
     const layout = (route.meta.layout as LayoutName) ?? 'default';
 
     return layouts[layout];
-  });
-
-  // Если промо компонент динамически уже загружен - возвращаем его
-  const promoComponent = computed(() => {
-    const promo = route.meta.promoComponent;
-
-    if (promo && typeof promo === 'object' && 'render' in promo) {
-      return promo;
-    }
-
-    if (typeof promo === 'function') {
-      return defineAsyncComponent(() => (promo as () => Promise<any>)());
-    }
-
-    return undefined;
   });
 </script>
