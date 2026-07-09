@@ -25,7 +25,10 @@ const routes: RouteRecordRaw[] = [
     path: '/registration',
     name: 'registration',
     component: () => import('@/views/auth/Registration.vue'),
-    meta: { layout: 'auth' },
+    meta: {
+      layout: 'auth',
+      promoComponent: () => import('@/components/promo/AuthPromo.vue'),
+    },
   },
 ];
 
